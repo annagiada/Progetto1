@@ -48,6 +48,11 @@ def artisti():
 def opere():
     return render_template('opere.html')
 
+@app.route('/artisti/opere')
+def opere_artisti():
+    artista = request.args.get('artista')
+    return render_template('opere_artisti.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

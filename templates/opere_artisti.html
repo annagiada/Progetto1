@@ -11,6 +11,7 @@
 
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">Museo gruppo 3</a>
@@ -36,26 +37,3 @@
             </div>
         </div>
     </nav>
-
-    <div class="container mt-5">
-        <h1 class="mb-4">Lista degli artisti</h1>
-        <ul class="list-group">
-            {% for artisti in artisti %}
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>{{artisti.name}}</span>
-                <div>
-                    <a href="/artisti/opere"><button class="btn btn-info btn-sm mr-2">Vai alle opere</button></a>
-
-                </div>
-            </li>
-            {% endfor %}
-            <!-- Aggiungi altre opere d'arte qui -->
-        </ul>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
-</html>
